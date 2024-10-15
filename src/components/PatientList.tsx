@@ -1,6 +1,5 @@
 import { usePatientStore } from "../store";
 import PatientDetails from "./PatientDetails";
-import PatientDetail from "./PatientDetails";
 
 const PatientList = () => {
   //const patients = usePatientStore((state) => state.patients);
