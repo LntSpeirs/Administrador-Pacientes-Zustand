@@ -1,6 +1,8 @@
 # Administrador de pacientes - Zustand
 
-Administrador de pacientes para aprender a usar Zustand y React Hook Form
+Administrador de pacientes para aprender a usar Zustand y React Hook Form.
+
+Ver [live demo](https://administrador-pacientes-con-zustand.netlify.app/)
 
 - Estado global con [Zustand](https://www.npmjs.com/package/zustand)
 
