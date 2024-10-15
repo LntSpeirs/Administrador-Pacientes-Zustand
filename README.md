@@ -4,6 +4,10 @@ Administrador de pacientes para aprender a usar Zustand y React Hook Form
 
 - Estado global con [Zustand](https://www.npmjs.com/package/zustand)
 
+- Implementar persistencia en localstorage con Zustand
+
+- React-toastify para las notificaciones: [react-toastify](https://www.npmjs.com/package/react-toastify)
+
 - uuid para crear id únicos
 
 ```bash
