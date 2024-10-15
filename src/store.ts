@@ -1,6 +1,7 @@
+import { create } from 'zustand';
+import { v4 as uuidv4} from "uuid"
 //Store de Zustand
 
-import { create } from "zustand";
 import { DraftPacient, Patient } from "./types";
 
 type PatientState = {
@@ -8,9 +9,19 @@ type PatientState = {
   addPatient: (data:DraftPacient) => void
 };
 
-export const usePatientStore = create<PatientState>(() => ({
+const createPatient = (patient: DraftPacient) : Patient => {
+  return {
+    ...patient,
+    id: uuidv4()
+  }
+}
+
+export const usePatientStore = create<PatientState>((set) => ({
   patients: [],
   addPatient: (data) => {
-    console.log("data",data)
+    const newPatient = createPatient(data)
+    set((state) => ({
+      patients: [...state.patients, newPatient]
+    }))
   }
 }));
